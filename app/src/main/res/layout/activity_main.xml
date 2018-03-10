@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FDF"
+        tools:context="com.example.krishnapratap.cricket.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/cric"
+                android:contentDescription="@string/description"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battingteam"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#FF0004"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/run"
+                    android:layout_margin="5dp"
+                    android:textSize="24sp"
+                    android:textColor="#00A53A"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/score"
+                    android:text="@string/zero"
+                    android:textSize="24sp"
+                    android:layout_margin="5dp"
+                    android:textColor="#3A142F"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wicket"
+                    android:textSize="24sp"
+                    android:layout_margin="5dp"
+                    android:textColor="#A32515"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textSize="24sp"
+                    android:id="@+id/wicket"
+                    android:layout_margin="5dp"
+                    android:textColor="#3A142F"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/one_run"
+                        android:onClick="oneRun"
+                        android:background="@android:color/holo_orange_light"
+                        android:layout_margin="3dp"
+                        style="?android:attr/buttonBarStyle"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/two_run"
+                        android:onClick="twoRun"
+                        android:layout_margin="3dp"
+                        style="?android:attr/buttonBarStyle"
+                        android:background="@android:color/holo_blue_light"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/three_run"
+                        android:onClick="threeRun"
+                        android:layout_margin="3dp"
+                        style="?android:attr/buttonBarStyle"
+                        android:background="@android:color/holo_orange_dark"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/four_run"
+                        android:onClick="fourRun"
+                        style="?android:attr/buttonBarStyle"
+                        android:background="@android:color/holo_green_dark"
+                        android:layout_margin="3dp"/>
+
+                    <Button
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/six_run"
+                        android:onClick="sixRun"
+                        android:layout_margin="3dp"
+                        style="?android:attr/buttonBarStyle"
+                        android:background="@android:color/holo_red_light"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/black"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bowlingteam"
+                android:gravity="center_horizontal"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#0019FF"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/over"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="#14A700"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/over"
+                    android:textColor="#3A142F"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/one_ball"
+                    android:onClick="oneBall"
+                    android:background="@android:color/holo_orange_light"
+                    android:layout_margin="3dp"
+                    style="?android:attr/buttonBarStyle"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wicket"
+                    android:onClick="wickett"
+                    android:background="@android:color/holo_green_dark"
+                    android:layout_margin="3dp"
+                    style="?android:attr/buttonBarStyle"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRun"
+                    android:text="@string/wide"
+                    android:background="@android:color/darker_gray"
+                    android:layout_margin="3dp"
+                    style="?android:attr/buttonBarStyle"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_ball"
+                    android:onClick="oneRun"
+                    android:background="@android:color/holo_red_light"
+                    android:layout_margin="3dp"
+                    style="?android:attr/buttonBarStyle"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:layout_marginTop="30dp"
+                android:onClick="reset"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="#F12000"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+

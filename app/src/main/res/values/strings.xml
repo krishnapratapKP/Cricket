@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cricket</string>
+    <string name="battingteam">Batting Team</string>
+    <string name="run">Run</string>
+    <string name="zero">0</string>
+    <string name="wicket">Wicket</string>
+    <string name="one_run">1 Run</string>
+    <string name="two_run">2 Run</string>
+    <string name="three_run">3 Run</string>
+    <string name="four_run">4 Run</string>
+    <string name="six_run">6 Run</string>
+    <string name="bowlingteam">Bowling Team</string>
+    <string name="over">Overs</string>
+    <string name="one_ball">1 Ball</string>
+    <string name="wide">Wide</string>
+    <string name="no_ball">No Ball</string>
+    <string name="reset">Reset</string>
+    <string name="description">Cricket Game Logo</string>
+</resources>
