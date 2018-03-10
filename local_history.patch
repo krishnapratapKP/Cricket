@@ -1,0 +1,16 @@
+Index: app/src/main/java/com/example/krishnapratap/cricket/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/krishnapratap/cricket/MainActivity.java	(revision )
++++ app/src/main/java/com/example/krishnapratap/cricket/MainActivity.java	(revision )
+@@ -103,7 +103,7 @@
+     {
+         String w=String.valueOf(wick);
+         TextView wicke=(TextView)findViewById(R.id.wicket);
+-        wicke.setText(wick);
++        wicke.setText(w);
+     }
+ 
+     private void display(int run)
