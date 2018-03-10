@@ -101,14 +101,16 @@ public class MainActivity extends AppCompatActivity {
 
     private  void displayWicket(int wick)
     {
+        String w=String.valueOf(wick);
         TextView wicke=(TextView)findViewById(R.id.wicket);
-        wicke.setText(""+wick);
+        wicke.setText(w);
     }
 
     private void display(int run)
     {
+        String r=String.valueOf(run);
         TextView textView=(TextView)findViewById(R.id.score);
-         textView.setText(""+run);
+         textView.setText(r);
     }
 
     private void dispallball(String ball) {
